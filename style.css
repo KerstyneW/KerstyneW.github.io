@@ -1,0 +1,96 @@
+* {
+	font-family: "Adobe Caslon Pro", serif;
+}
+
+h1, h2, h3 {
+	text-align: center;
+	color:DarkSlateGrey;
+}
+
+h1 {
+	background-color:DarkGoldenRod;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+h2 {
+	margin-left: 200px;
+	margin-right: 200px;
+	border: 3px solid DarkGoldenRod;
+}
+
+h3 {
+	text-decoration: underline;
+	margin-left: 70px
+}
+
+p {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 13pt;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+body {
+	background-color:Wheat;
+}
+
+#ulnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: DarkSeaGreen;
+}
+
+ul {
+	list-style: square;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float:left;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+li a {
+	display: block;
+	color: DarkSlateGray;
+	padding: 15px 15px;
+	text-align: center;	
+	text-decoration: none
+}
+
+li a:hover {
+	background-color: Wheat;
+}
+
+table {
+	width: 50%;
+	border-collapse: collapse;
+	empty-cells: hide;
+	margin-left: auto;
+	margin-right:auto;
+	background-color: Tan;
+}
+
+th, td {
+	border: 3px solid DarkSlateGrey;
+	padding: 10px
+}
+th {
+	font-size: 18px;
+}
+
+.imgone {
+	float: left;
+	border-radius: 15px;
+}
+.imgtwo {
+	float:right;
+	border-radius: 15px;
+}
