@@ -36,6 +36,12 @@ body {
 	background-color:Wheat;
 }
 
+span {
+	display: block;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}  
+
 #ulnav {
 	list-style-type: none;
 	margin: 0;
@@ -99,11 +105,11 @@ div.gallery {
   margin: 70px;
   border: 2px solid DarkSlateGrey;
   float: left;
-  width: 300px;
+  width: 270px;
 }
 
 div.gallery:hover {
-  border: 1px solid DarkSlateGrey;
+  border: 3px solid DarkGoldenRod;
 }
 
 div.gallery img {
@@ -115,4 +121,5 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+
 
