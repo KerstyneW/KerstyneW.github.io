@@ -1,53 +1,77 @@
+/* Use this font for a lot of things, its basic with a little bit of spice to make it unique */
 * {
 	font-family: "Adobe Caslon Pro", serif;
 }
-
+/* Colour taken from https://www.w3schools.com/html/html_colors.asp */
 h1, h2, h3 {
-	text-align: center;
 	color:DarkSlateGrey;
 }
-
+/* Colour taken from https://www.w3schools.com/html/html_colors.asp, I wanted a larger font size and more room around
+my text for the main header to I changed my margins */
 h1 {
 	background-color:DarkGoldenRod;
+	margin-block-start: 10px;
+	margin-block-end: 10px;
+	text-align: center;
+	font-size: 26pt;
 	margin-left: 70px;
 	margin-right: 70px;
 }
-
+/* Colour taken from https://www.w3schools.com/html/html_colors.asp, I wanted my borders for h2 to be narrower than h1,
+clear: left was used to fix my image gallery */
 h2 {
+	margin-block-start: 50px;
+	margin-block-end: 10px;
+	border: 3px solid DarkGoldenRod;
+	text-align: center;
+	font-size: 20pt;
 	margin-left: 200px;
 	margin-right: 200px;
-	border: 3px solid DarkGoldenRod;
+	clear: left;
 }
+
 
 h3 {
 	text-decoration: underline;
-	margin-left: 70px
+	margin-block-start: 5px;
+	margin-block-end: 5px;
+	text-align: left;
+	clear: left;
+	margin-left: 200px;
 }
-
+/* Messed around with my margins until they looked good with the margins of all my headers, some settings I changed
+just to meet the requirements of this assignment*/
 p {
 	margin-top: 40px;
 	margin-bottom: 40px;
 	font-size: 13pt;
-	margin-left: 70px;
-	margin-right: 70px;
+	margin-block-start: 40px;
+	margin-block-end: 40px;
+	margin-inline-start: 200px;
+	margin-inline-end: 200px;
 }
-
+/* Colour taken from https://www.w3schools.com/html/html_colors.asp */
 body {
 	background-color:Wheat;
+	margin: 20px;
+	text-align: left;
 }
-
+/* Used on my first page to separate paragraphs within my <p> tag.*/
 span {
 	display: block;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }  
-
+/* Next couple css statements were taken from https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black
+to create my navigation bar. I made this one an ID because I have lists on my webpage that I wanted a different design for
+Colour was once again taken from https://www.w3schools.com/html/html_colors.asp and I changed other settings as well to make
+it my own*/
 #ulnav {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
 	background-color: DarkSeaGreen;
+	padding-inline-start: 0px;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
 }
 
 ul {
@@ -66,60 +90,67 @@ li {
 li a {
 	display: block;
 	color: DarkSlateGray;
-	padding: 15px 15px;
+	padding: 10px 10px;
 	text-align: center;	
 	text-decoration: none
 }
-
+/* The hover for my navbar, wanted it to be the same colour as the background for my website */
 li a:hover {
 	background-color: Wheat;
 }
-
+/* Took a bunch of settings from https://www.w3schools.com/css/css_table.asp and experimented with them until I
+found a style that worked with my webpage, colours are from https://www.w3schools.com/html/html_colors.asp  */
 table {
 	width: 50%;
 	border-collapse: collapse;
 	empty-cells: hide;
 	margin-left: auto;
 	margin-right:auto;
-	background-color: Tan;
 }
 
 th, td {
-	border: 3px solid DarkSlateGrey;
-	padding: 10px
+	padding: 10px;
+	border-bottom: 3px solid DarkSlateGray;
 }
 th {
 	font-size: 18px;
+	text-align:center;
+	background-color:DarkSlateGrey;
+	color: Wheat;
 }
-
+/* IDs for my images on my first page, they each needed to float to a different side */
 #imgone {
 	float: left;
 	border-radius: 15px;
+	padding-right: 25px;
 }
 #imgtwo {
 	float:right;
 	border-radius: 15px;
+	padding-left: 25px;
 }
-
+/* Adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery */
 div.gallery {
-  margin: 70px;
-  border: 2px solid DarkSlateGrey;
-  float: left;
-  width: 270px;
+	margin-block-start: 80px;
+	margin-block-end: 80px;
+	margin-left: 5%;
+	padding: 20px;
+	border: 2px solid DarkSlateGrey;
+	float: left;
+	width: 270px;
 }
 
 div.gallery:hover {
-  border: 3px solid DarkGoldenRod;
+	border: 3px solid DarkGoldenRod;
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 div.desc {
-  padding: 15px;
-  text-align: center;
+	padding: 15px;
+	text-align: center;
 }
-
 
